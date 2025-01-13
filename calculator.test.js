@@ -1,5 +1,5 @@
 import assert from "assert"
-import { add, multiply, subtract } from "./calculator.js"
+import { add, multiply, subtract, divide } from "./calculator.js"
 
 
 {
@@ -23,4 +23,15 @@ import { add, multiply, subtract } from "./calculator.js"
   assert.equal(got, want)
 }
 
+// TDD
+// ich möchte eine divide function schreiben
+// 1.failing test
+// 2. null implementation
+// 3. die echte logik
+{
+  const want = 8
+  const got = divide(16,2)
+
+  assert.equal(got, want)
+}
 
